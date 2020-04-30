@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kart Eşleştirme Oyunu</title>
+    <meta name="description" content="a memory matching web based game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <main>
+            <header class="title">
+                <h1>Kart Eşleştirme Oyunu</h1>
+            </header>
+
+            <section class="info-area">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="timer">
+                    Oyun Süresi -
+                    <span id="minutes">00</span> :
+                    <span id="seconds">00</span>
+                </div>
+
+                <div class="moves">
+                    Hamle sayısı:
+                    <span class="move-counter">0</span>
+                </div>
+                <div class="reset tooltip">
+                    <i class="fas fa-retweet">
+              <span class="tip-text">Tekrar Oyna!</span>
+            </i>
+                </div>
+            </section>
+
+            <section class="play-area">
+                <div class="play-wrapper">
+                    <ul class="cards-list">
+                        <div class="cards-wrapper">
+                            <li class="card helicopter">
+                                <i class="icon fas fa-helicopter"></i>
+                            </li>
+                            <li class="card peace">
+                                <i class="icon fab fa-angellist"></i>
+                            </li>
+                            <li class="card poop">
+                                <i class="icon fas fa-poo"></i>
+                            </li>
+                            <li class="card frog">
+                                <i class="icon fas fa-frog"></i>
+                            </li>
+                            <li class="card monster">
+                                <i class="icon fab fa-optin-monster"></i>
+                            </li>
+                            <li class="card bird">
+                                <i class="icon fab fa-earlybirds"></i>
+                            </li>
+                            <li class="card poop">
+                                <i class="icon fas fa-poo"></i>
+                            </li>
+                            <li class="card chess">
+                                <i class="icon fas fa-chess-knight"></i>
+                            </li>
+                            <li class="card jet">
+                                <i class="icon fas fa-fighter-jet"></i>
+                            </li>
+                            <li class="card monster">
+                                <i class="icon fab fa-optin-monster"></i>
+                            </li>
+                            <li class="card chess">
+                                <i class="icon fas fa-chess-knight"></i>
+                            </li>
+                            <li class="card jet">
+                                <i class="icon fas fa-fighter-jet"></i>
+                            </li>
+                            <li class="card bird">
+                                <i class="icon fab fa-earlybirds"></i>
+                            </li>
+                            <li class="card helicopter">
+                                <i class="icon fas fa-helicopter"></i>
+                            </li>
+                            <li class="card frog">
+                                <i class="icon fas fa-frog"></i>
+                            </li>
+                            <li class="card peace">
+                                <i class="icon fab fa-angellist"></i>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="modal">
+                <div class="modal-content">
+                    <span id="close-button">X</span>
+                    <h1>Tebrikler!!</h1>
+                    <p>Tüm kartları başarıyla eşleştirdin kazandın!!!</p>
+                    <p class="info">
+                        <span id="total-moves"></span> Hamle, Süre : <span id="time"></span>,ve
+                        <span id="star-rating"></span> aldın...
+                    </p>
+                    <p>Tekrar Oynamak ister misin?</p>
+                    <button id="new-game">Tekrar</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="./js/script.js" async defer></script>
+</body>
+
+</html>
